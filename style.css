@@ -1,6 +1,7 @@
 
 nav {
-    
+    background-color: aqua;
+    display: grid;
 }
 
 main{
