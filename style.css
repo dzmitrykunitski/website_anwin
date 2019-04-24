@@ -1,7 +1,10 @@
-
+body {
+    margin: 0;
+}
 nav {
     background-color: aqua;
-    display: grid;
+    
+    
 }
 
 main{
