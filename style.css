@@ -11,16 +11,22 @@ header{
     
 }
 nav {
-    
+    display: flex;
+    justify-content:center;
 }
+
 #logo {
     max-height: 200px;
     
+}
+#foto1,#foto2{
+    max-width: 100%;
 }
 
 main {
     display: grid;
     grid-template-columns: 50% 50%;
+    
    
     
 }
@@ -29,21 +35,21 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
-    
-    
+    padding: 100px;   
 }
+
 
 
 #diensten{
     display: flex;
     flex-direction: column;
-    align-content: center;
-    padding: 30px;
+     align-items: center;
+    padding: 100px;   
 }
 #contact{
     display: flex;
     flex-direction: column;
+    
     align-items: center;
     padding: 30px;
 }
