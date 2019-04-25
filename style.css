@@ -25,17 +25,33 @@ main {
     
 }
 #overons{
-    background-color: gold;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    
     
 }
+
+
 #diensten{
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 30px;
 }
 #contact{
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
 }
 #contactform{
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
 }
 
 footer {
