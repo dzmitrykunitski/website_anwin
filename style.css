@@ -28,7 +28,7 @@ p{
     margin-bottom: 4%;
     max-height: 70px;
 }
-#foto1,#foto2{
+#foto1,#foto2,#foto3{
     max-width: 100%;
 }
 
@@ -61,14 +61,12 @@ main {
     align-items: center;
     padding: 20px;
     color: #8e643d;
+    
 }
-#contactform{
+form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    font-family:sans-serif;
-    color: #8e643d;
+    
 }
 
 footer {
@@ -85,5 +83,23 @@ footer {
         
         grid-template-columns: 100% ;
     }
-    
+    main #foto1{
+        order: 1;
+    }
+    main #overons{
+        order: 2;
+    }
+    main #diensten{
+        order: 4;
+    }
+    main #foto2{
+        order: 3;
+    }
+    main #contact{
+        order: 6;
+    }
+    main #foto3{
+        order: 5;
+    }
 }
+
