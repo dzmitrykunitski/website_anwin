@@ -2,23 +2,56 @@ body {}
 
 header {}
 
+
 nav {
     display: flex;
-    background: #fff7e2;
+    background-image: url("nav.jpg");
+    /*background: #fff7e2;*/
+}
 
+
+.welkom{
+    color: #f7b97b;
+    font-family: monospace;
+    font-style: italic;
+    position: absolute;
+    right: 400px;
+    top: 25px;
+    font-size: 65px;
+    
 
 }
 
-p {}
+
+p {
+    color: white;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: circle;
+}
+
+ul li{
+    font-family: sans-serif;
+    list-style: circle;
+    padding-left: 20px;
+}
+
+article {
+    color: #382615;
+    font-weight: 600;
+    padding: 50px;
+}
 
 #logo {
-    margin-left: 2%;
-    margin-bottom: 3%;
+    margin-left: 5%;
+    margin-bottom: 2%;
     max-height: 130px;
 }
 
 #logoFooter {
-    margin-top: 3%;
+    margin-top: 1%;
     margin-bottom: 4%;
     max-height: 70px;
 }
@@ -48,6 +81,12 @@ main h2 {
     font-weight: 900;
 }
 
+main h3 {
+    /*color: rgb(149, 27, 129) !important;*/
+    color: #8e643d;
+    font-weight: 700;
+}
+
 #overons {
     display: flex;
     flex-direction: column;
@@ -71,6 +110,7 @@ main h2 {
     flex-direction: column;
     font-family: sans-serif;
     align-items: center;
+    padding: 50px;
 
     /*color: #8e643d;*/
 
@@ -104,6 +144,16 @@ textarea {
 
 input[type=submit] {
     background: #d39e69;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 17px;
+    letter-spacing: .06em;
+}
+
+input[type=submit]:hover {
+    transition-duration: 0.4s;
+    background: #7c5a38;
     color: white;
     font-family: sans-serif;
     font-weight: 900;
