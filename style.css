@@ -29,7 +29,7 @@ ul li {
 article {
     color: #382615;
     font-weight: 600;
-    padding: 50px;
+    padding: 10px;
 }
 
 #logo {
@@ -53,36 +53,37 @@ article {
 main {
     display: grid;
     grid-template-columns: 50% 50%;
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal;
     font-size: 17px;
-    letter-spacing: .06em;
-    line-height: 1.8em;
     text-transform: none;
-    color: rgba(28, 28, 28, .86);
-    padding-bottom: 5px;
+    color: #2c2c2c;
+
+
+
 }
 
 main h2 {
     /*color: rgb(149, 27, 129) !important;*/
     color: #d39e69;
-    font-weight: 900;
-    margin-right:5%;
+
+    margin-right: 5%;
 }
 
 main h3 {
     /*color: rgb(149, 27, 129) !important;*/
     color: #8e643d;
-    font-weight: 700;
-    margin-right:5%;
+
+    margin-right: 5%;
 }
 
 #overons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: sans-serif;
     padding: 50px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
     /*color: #8e643d;*/
 }
 
@@ -91,53 +92,57 @@ main h3 {
     flex-direction: column;
     align-items: center;
     padding: 50px;
-    font-family: sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
     /*color: #8e643d;*/
 }
 
 #contact {
     display: flex;
     flex-direction: column;
-    font-family: sans-serif;
-    align-items: center;
-    padding: 50px;
-
+    padding: 20px;
     /*color: #8e643d;*/
 
 }
 
-form {}
+#contact h2 {
+    align-self: center;
+}
+
+#logoFooter {
+    align-self: center;
+}
+
+form {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
 
 input[type=text],
 input[type=submit],
 textarea {
 
-
     resize: none;
+    height: 40px;
+    max-width: 100%;
+    /*border: 2px solid #d39e69;
+    width: 70%;
+   
+    line-height: 40px;
+    font-size: 17px;
+    resize: none;
+    margin-top: 6px;
+    margin-bottom: 16px;*/
 }
 
 textarea {
-    height: 400px;
+    height: 100px;
 }
 
-input[type=submit] {
-    background: #d39e69;
-    color: white;
-    font-family: sans-serif;
-    font-weight: 900;
-    font-size: 17px;
-    letter-spacing: .06em;
-}
+input[type=submit] {}
 
-input[type=submit]:hover {
-    transition-duration: 0.4s;
-    background: #7c5a38;
-    color: white;
-    font-family: sans-serif;
-    font-weight: 900;
-    font-size: 17px;
-    letter-spacing: .06em;
-}
+input[type=submit]:hover {}
 
 footer {
     background-color: #d39e69;
@@ -154,6 +159,12 @@ footer {
     main {
 
         grid-template-columns: 100%;
+    }
+
+    #overons {
+
+        padding: 0px;
+        /*color: #8e643d;*/
     }
 
     main #fotoLobby {
