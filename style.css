@@ -10,25 +10,13 @@ nav {
 }
 
 
-.welkom {
-    color: #f7b97b;
-    font-family: monospace;
-    font-style: italic;
-    position: absolute;
-    right: 400px;
-    top: 25px;
-    font-size: 65px;
-
-
-}
-
-
 p {
     color: white;
     font-family: sans-serif;
 }
 
 ul {
+    margin-right: 5%;
     list-style: circle;
 }
 
@@ -79,12 +67,14 @@ main h2 {
     /*color: rgb(149, 27, 129) !important;*/
     color: #d39e69;
     font-weight: 900;
+    margin-right:5%;
 }
 
 main h3 {
     /*color: rgb(149, 27, 129) !important;*/
     color: #8e643d;
     font-weight: 700;
+    margin-right:5%;
 }
 
 #overons {
