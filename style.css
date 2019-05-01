@@ -10,7 +10,7 @@ nav {
 }
 
 
-.welkom{
+.welkom {
     color: #f7b97b;
     font-family: monospace;
     font-style: italic;
@@ -18,7 +18,7 @@ nav {
     right: 400px;
     top: 25px;
     font-size: 65px;
-    
+
 
 }
 
@@ -32,7 +32,7 @@ ul {
     list-style: circle;
 }
 
-ul li{
+ul li {
     font-family: sans-serif;
     list-style: circle;
     padding-left: 20px;
@@ -56,9 +56,9 @@ article {
     max-height: 70px;
 }
 
-#foto1,
-#foto2,
-#foto3 {
+#fotoLobby,
+#fotoHotel,
+#fotoBril {
     max-width: 100%;
 }
 
@@ -116,30 +116,18 @@ main h3 {
 
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-
-    border: 5px solid #d39e69;
-    border-radius: 20px;
-    padding: 10px;
-}
+form {}
 
 input[type=text],
 input[type=submit],
 textarea {
-    width: 400px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+
+
     resize: none;
 }
 
 textarea {
-    height: 100px;
+    height: 400px;
 }
 
 input[type=submit] {
@@ -178,7 +166,7 @@ footer {
         grid-template-columns: 100%;
     }
 
-    main #foto1 {
+    main #fotoLobby {
         order: 1;
     }
 
@@ -190,7 +178,7 @@ footer {
         order: 4;
     }
 
-    main #foto2 {
+    main #fotoHotel {
         order: 3;
     }
 
@@ -198,7 +186,7 @@ footer {
         order: 6;
     }
 
-    main #foto3 {
+    main #fotoBril {
         order: 5;
     }
 }
