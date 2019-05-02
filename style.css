@@ -10,8 +10,6 @@ nav {
 }
 
 
-
-
 ul {
     margin-right: 5%;
     list-style: circle;
@@ -56,12 +54,10 @@ article {
 }
 
 #fotoLobby,
-#fotoHotel,
+#fotoTel,
 #fotoBril {
     max-width: 100%;
-
 }
-
 main {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -72,7 +68,6 @@ main {
     word-wrap: break-word;
 
     /*font-family: "Comic Sans MS", sans-serif;*/
-
 
 }
 
@@ -149,7 +144,13 @@ textarea {
     font-weight: 900;
     font-size: 17px;
     letter-spacing: .06em;
+}
 
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus{
+    border: 3px solid #555;
+    transition-duration: 0.3s;
 }
 
 textarea {
@@ -160,10 +161,13 @@ input[type=submit] {
     background: #d39e69;
     color: white;
     height: 40px;
-
+    padding-bottom: 40px;
 }
 
-input[type=submit]:hover {}
+input[type=submit]:hover {
+    background: #8e643d;
+    transition-duration: 0.3s;
+}
 
 footer {
     background-color: #d39e69;
@@ -172,20 +176,25 @@ footer {
     flex-direction: column;
     align-items: center;
     font-family: sans-serif;
-
-
 }
 
-@media screen and (max-width: 1024px) and (max-height:1366px) {
+@media screen and (max-width: 1024px) {
     main {
 
         grid-template-columns: 100%;
 
     }
 
-    h3 {
-        font-size: 16px;
+    nav {
+    display: flex;
+    background: #fff7e2;
     }
+
+    main h3 {
+    font-family: "Comic Sans MS", monospace, sans-serif;
+    color: #8e643d;
+    font-size: 1.3em;
+}
 
     #overons {
 
@@ -202,12 +211,24 @@ footer {
         order: 2;
     }
 
+    article {
+    font-weight: 500;
+    padding: 4em;
+    font-family: Roboto;
+    color: rgba(28, 28, 28, .86);
+    letter-spacing: .06em;
+    line-height: 1.8em;
+    word-break: keep-all;
+    text-transform: none;
+    text-align: justify;
+    }
+
     main #diensten {
         order: 4;
     }
 
-    main #fotoHotel {
-        order: 3;
+    main #fotoTel{
+        order: 5;
         width: 100%;
     }
 
@@ -216,6 +237,6 @@ footer {
     }
 
     main #fotoBril {
-        order: 5;
+        order: 3;
     }
 }
