@@ -33,19 +33,20 @@
                 <li>Portier/roomservice</li>
             </ul>
         </section>
-        <img id="fotoHotel" src="fotoHotel.jpg" alt="foto van Hotel">
+
         <img id="fotoBril" src="fotoBril.jpeg" alt="foto van bril">
+                <img id="fotoTel" src="fotoTel.jpg" alt="foto van telefoon">
         <section id="contact">
             <h2>Contacten</h2>
             <img id="logoFooter" alt="logoFooter" src="logo.png">
             <!--<p>ANWIN</p>-->
 
-            <form>
+            <form method="post" name="contactform" action="formToEmail.php">
                 <input type="text" placeholder="Naam" name="naam">
                 <input type="text" placeholder="Voornaam" name="voornaam">
-                <input type="email" placeholder="E-mail" name="voornaam">
+                <input type="email" placeholder="E-mail" name="email">
 
-                <textarea placeholder="Schrijf hier je bericht ...."></textarea>
+                <textarea name="bericht" placeholder="Schrijf hier je bericht ...."></textarea>
                 <input type="submit" value="Verzenden">
             </form>
         </section>
@@ -54,9 +55,6 @@
         <p>Rue de la presse 4 1000 Brussel</p>
         <p>Copyright © 2019</p>
     </footer>
-
-
-
 
 
 </body>
