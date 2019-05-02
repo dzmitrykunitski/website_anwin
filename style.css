@@ -48,6 +48,7 @@ article {
 #fotoHotel,
 #fotoBril {
     max-width: 100%;
+
 }
 
 main {
@@ -105,6 +106,8 @@ main h3 {
 
 }
 
+#fotoBril {}
+
 #contact h2 {
     align-self: center;
 }
@@ -116,31 +119,37 @@ main h3 {
 form {
     display: grid;
     grid-row-gap: 10px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 
 input[type=text],
 input[type=submit],
+input[type=email],
 textarea {
 
     resize: none;
-    height: 40px;
+    height: 15px;
     max-width: 100%;
-    /*border: 2px solid #d39e69;
-    width: 70%;
-   
-    line-height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 900;
     font-size: 17px;
-    resize: none;
-    margin-top: 6px;
-    margin-bottom: 16px;*/
+    letter-spacing: .06em;
+
 }
 
 textarea {
-    height: 100px;
+    height: 80px;
 }
 
-input[type=submit] {}
+input[type=submit] {
+    background: #d39e69;
+    color: white;
+    height: 40px;
+
+}
 
 input[type=submit]:hover {}
 
@@ -155,10 +164,11 @@ footer {
 
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1024px) and (max-height:1366px) {
     main {
 
         grid-template-columns: 100%;
+
     }
 
     #overons {
@@ -181,6 +191,7 @@ footer {
 
     main #fotoHotel {
         order: 3;
+        width: 100%;
     }
 
     main #contact {
