@@ -10,26 +10,35 @@ nav {
 }
 
 
-p {
-    color: white;
-    font-family: sans-serif;
-}
+
 
 ul {
     margin-right: 5%;
     list-style: circle;
+    font-family: Roboto;
+    font-weight: 500;
+    color: rgba(28, 28, 28, .86);
+    letter-spacing: .06em;
+    line-height: 1.8em;
+    text-transform: none;
 }
 
 ul li {
-    font-family: sans-serif;
+
     list-style: circle;
     padding-left: 20px;
 }
 
 article {
-    color: #382615;
-    font-weight: 600;
-    padding: 10px;
+    /*color: #382615;*/
+    font-weight: 500;
+    padding: 30px;
+    font-family: Roboto;
+    color: rgba(28, 28, 28, .86);
+    letter-spacing: .06em;
+    line-height: 1.8em;
+    word-break: keep-all;
+    text-transform: none;
 }
 
 #logo {
@@ -57,9 +66,9 @@ main {
     font-weight: 900;
     font-style: normal;
     font-size: 17px;
-    text-transform: none;
     color: #2c2c2c;
 
+    /*font-family: "Comic Sans MS", sans-serif;*/
 
 
 }
@@ -67,15 +76,14 @@ main {
 main h2 {
     /*color: rgb(149, 27, 129) !important;*/
     color: #d39e69;
-
+    font-family: "Comic Sans MS", cursive, sans-serif;
     margin-right: 5%;
 }
 
 main h3 {
-    /*color: rgb(149, 27, 129) !important;*/
+    font-family: "Comic Sans MS", monospace, sans-serif;
     color: #8e643d;
 
-    margin-right: 5%;
 }
 
 #overons {
@@ -83,7 +91,8 @@ main h3 {
     flex-direction: column;
     align-items: center;
     padding: 50px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+
+
 
     /*color: #8e643d;*/
 }
@@ -92,8 +101,7 @@ main h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+
 
     /*color: #8e643d;*/
 }
@@ -119,7 +127,7 @@ main h3 {
 form {
     display: grid;
     grid-row-gap: 10px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Comic Sans MS", sans-serif;
 }
 
 
@@ -174,6 +182,7 @@ footer {
     #overons {
 
         padding: 0px;
+
         /*color: #8e643d;*/
     }
 
