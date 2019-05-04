@@ -1,12 +1,8 @@
-body {}
-
-header {}
-
-
 nav {
     display: flex;
     background-image: url("nav.jpg");
     /*background: #fff7e2;*/
+
 }
 
 
@@ -14,43 +10,33 @@ ul {
     margin-right: 5%;
     list-style: circle;
     font-family: Roboto;
-    font-weight: 500;
-    color: rgba(28, 28, 28, .86);
-    letter-spacing: .06em;
-    line-height: 1.8em;
-    text-transform: none;
-    font-weight: 900;
 
 }
 
 ul li {
 
-    list-style: circle;
-    padding-left: 20px;
+
+    padding-left: 1.25em;
 }
 
 article {
     /*color: #382615;*/
-    font-weight: 900;
-    padding: 20px;
+
+    text-align: justify;
+    padding: 2em;
     font-family: Roboto;
-    color: rgba(28, 28, 28, .86);
-    letter-spacing: .06em;
-    line-height: 1.8em;
-
-
 }
 
 #logo {
     margin-left: 5%;
     margin-bottom: 2%;
-    max-height: 130px;
+    max-height: 8.125em;
 }
 
 #logoFooter {
     margin-top: 1%;
     margin-bottom: 4%;
-    max-height: 70px;
+    max-height: 4.375em;
 }
 
 #fotoLobby,
@@ -58,49 +44,38 @@ article {
 #fotoBril {
     max-width: 100%;
 }
+
 main {
     display: grid;
     grid-template-columns: 50% 50%;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 17px;
-    color: #2c2c2c;
-    word-wrap: break-word;
+    font-size: 1.22vw;
 
     /*font-family: "Comic Sans MS", sans-serif;*/
 
 }
 
 main h2 {
-    /*color: rgb(149, 27, 129) !important;*/
     color: #d39e69;
     font-family: "Comic Sans MS", cursive, sans-serif;
-    margin-right: 5%;
+    text-align: center;
+
 }
 
 main h3 {
     font-family: "Comic Sans MS", monospace, sans-serif;
     color: #8e643d;
-    align-self: center;
-    word-wrap: break-word;
+    text-align: center;
+
+
+
 }
 
 #overons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-
-
 
     /*color: #8e643d;*/
 }
 
 #diensten {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 
     /*color: #8e643d;*/
 }
@@ -108,12 +83,12 @@ main h3 {
 #contact {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 1.25em;
     /*color: #8e643d;*/
 
 }
 
-#fotoBril {}
+
 
 #contact h2 {
     align-self: center;
@@ -125,7 +100,7 @@ main h3 {
 
 form {
     display: grid;
-    grid-row-gap: 10px;
+    grid-row-gap: 0.625em;
     font-family: "Comic Sans MS", sans-serif;
 }
 
@@ -136,37 +111,38 @@ input[type=email],
 textarea {
 
     resize: none;
-    height: 15px;
+    height: 0.9375em;
     max-width: 100%;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    padding: 12px;
+    border: 0.125em solid #ccc;
+    border-radius: 0.3125em;
+    padding: 0.75em;
     font-weight: 900;
-    font-size: 17px;
+    font-size: 1.0625em;
     letter-spacing: .06em;
 }
 
 input[type=text]:focus,
 input[type=email]:focus,
-textarea:focus{
+textarea:focus {
     border: 3px solid #555;
     transition-duration: 0.3s;
 }
 
 textarea {
-    height: 80px;
+    height: 5em;
 }
 
 input[type=submit] {
     background: #d39e69;
     color: white;
-    height: 40px;
-    padding-bottom: 40px;
+    height: 2.5em;
+    padding-bottom: 2.5em;
 }
 
 input[type=submit]:hover {
     background: #8e643d;
     transition-duration: 0.3s;
+    cursor: pointer;
 }
 
 footer {
@@ -178,30 +154,26 @@ footer {
     font-family: sans-serif;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 64em) {
     main {
 
         grid-template-columns: 100%;
+        font-size: 4vw;
+
+
 
     }
 
     nav {
-    display: flex;
-    background: #fff7e2;
+
+        background: #fff7e2;
     }
 
-    main h3 {
-    font-family: "Comic Sans MS", monospace, sans-serif;
-    color: #8e643d;
-    font-size: 1.3em;
-}
-
-    #overons {
-
-        padding: 0px;
-        word-wrap: break-word;
-        /*color: #8e643d;*/
+    main h2 {
+        font-size: 8vw;
     }
+
+    #overons {}
 
     main #fotoLobby {
         order: 1;
@@ -211,23 +183,13 @@ footer {
         order: 2;
     }
 
-    article {
-    font-weight: 500;
-    padding: 4em;
-    font-family: Roboto;
-    color: rgba(28, 28, 28, .86);
-    letter-spacing: .06em;
-    line-height: 1.8em;
-    word-break: keep-all;
-    text-transform: none;
-    text-align: justify;
-    }
+    article {}
 
     main #diensten {
         order: 4;
     }
 
-    main #fotoTel{
+    main #fotoTel {
         order: 5;
         width: 100%;
     }
