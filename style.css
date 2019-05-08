@@ -1,7 +1,11 @@
-nav {
-    display: flex;
-    background-image: url("nav.jpg");
-    /*background: #fff7e2;*/
+body {
+    margin: 0;
+}
+
+header {
+
+
+    background: #fff7e2;
 
 }
 
@@ -9,8 +13,13 @@ nav {
 ul {
     margin-right: 5%;
     list-style: circle;
-    font-family: Roboto;
 
+
+}
+
+#inhoud {
+    display: flex;
+    justify-content: space-around;
 }
 
 ul li {
@@ -19,17 +28,9 @@ ul li {
     padding-left: 1.25em;
 }
 
-article {
-    /*color: #382615;*/
-
-    text-align: justify;
-    padding: 2em;
-    font-family: Roboto;
-}
 
 #logo {
-    margin-left: 5%;
-    margin-bottom: 2%;
+
     max-height: 8.125em;
 }
 
@@ -43,106 +44,7 @@ article {
 #fotoTel,
 #fotoBril {
     max-width: 100%;
-}
 
-main {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    font-size: 1.22vw;
-
-    /*font-family: "Comic Sans MS", sans-serif;*/
-
-}
-
-main h2 {
-    color: #d39e69;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    text-align: center;
-
-}
-
-main h3 {
-    font-family: "Comic Sans MS", monospace, sans-serif;
-    color: #8e643d;
-    text-align: center;
-
-
-
-}
-
-#overons {
-
-    /*color: #8e643d;*/
-}
-
-#diensten {
-
-    /*color: #8e643d;*/
-}
-
-#contact {
-    display: flex;
-    flex-direction: column;
-    padding: 1.25em;
-    /*color: #8e643d;*/
-
-}
-
-
-
-#contact h2 {
-    align-self: center;
-}
-
-#logoFooter {
-    align-self: center;
-}
-
-form {
-    display: grid;
-    grid-row-gap: 0.625em;
-    font-family: "Comic Sans MS", sans-serif;
-}
-
-
-input[type=text],
-input[type=submit],
-input[type=email],
-textarea {
-
-    resize: none;
-    height: 0.9375em;
-    max-width: 100%;
-    border: 0.125em solid #ccc;
-    border-radius: 0.3125em;
-    padding: 0.75em;
-    font-weight: 900;
-    font-size: 1.0625em;
-    letter-spacing: .06em;
-}
-
-input[type=text]:focus,
-input[type=email]:focus,
-textarea:focus {
-    border: 3px solid #555;
-    transition-duration: 0.3s;
-}
-
-textarea {
-    height: 5em;
-}
-
-input[type=submit] {
-    background: #d39e69;
-    color: white;
-    height: 2.5em;
-    padding-bottom: 2.5em;
-}
-
-input[type=submit]:hover {
-    background: #8e643d;
-    transition-duration: 0.3s;
-    cursor: pointer;
 }
 
 footer {
@@ -152,53 +54,4 @@ footer {
     flex-direction: column;
     align-items: center;
     font-family: sans-serif;
-}
-
-@media screen and (max-width: 64em) {
-    main {
-
-        grid-template-columns: 100%;
-        font-size: 4vw;
-
-
-
-    }
-
-    nav {
-
-        background: #fff7e2;
-    }
-
-    main h2 {
-        font-size: 8vw;
-    }
-
-    #overons {}
-
-    main #fotoLobby {
-        order: 1;
-    }
-
-    main #overons {
-        order: 2;
-    }
-
-    article {}
-
-    main #diensten {
-        order: 4;
-    }
-
-    main #fotoTel {
-        order: 5;
-        width: 100%;
-    }
-
-    main #contact {
-        order: 6;
-    }
-
-    main #fotoBril {
-        order: 3;
-    }
 }
