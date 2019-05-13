@@ -1,7 +1,6 @@
-
-<?php if(isset($_POST['email'])) {
+<?php if(isset($_POST['submit'])) {
  
-    $email_to = "alexandra.klochkova@yahoo.com";
+    $email_to = "kunitskidzmitry@gmail.com";
     
      //andrey.fanoberov@hotmail.com
     
