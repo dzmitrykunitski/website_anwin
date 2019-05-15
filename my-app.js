@@ -1,3 +1,4 @@
+var $$ = Dom7;
 var app = new Framework7({
     // App root element
     root: '#app',
@@ -17,4 +18,17 @@ var app = new Framework7({
     },
   ],
     // ... other parameters
+
+
+});
+var notificationClickToClose = app.notification.create({
+    icon: '<i class="icon demo-icon">7</i>',
+    title: 'Framework7',
+    titleRightText: 'now',
+    subtitle: 'Notification with close on click',
+    text: 'Click me to close',
+    closeOnClick: true,
+})
+$$('.open-click-to-close').on('click', function () {
+    notificationClickToClose.open();
 });
