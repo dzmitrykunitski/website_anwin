@@ -1,4 +1,39 @@
-<?php if(isset($_POST['submit'])) {
+<?php 
+
+$subject = 'Onderwerp';
+$sendTo = 'info@anwin.be';
+
+$name = $_POST['naam']; 
+$firstName = $_POST['voornaam']; 
+$emailField = $_POST['email']; 
+$message = $_POST['bericht']; 
+
+$body = <<<EOD
+<br><hr><br>
+
+Naam: $naam <br>
+Voornaam: $voornaam <br>
+Email: $email <br>
+Bericht: $bericht <br>
+EOD;
+
+$headers = "Van: $email\r\n";
+$headers .= "Content-type: text/html\r\n";
+$success = mail($sendTo,$subject, $body, $headers);
+
+$resultaat = <<<EOD 
+
+<div class="close">
+<p>SUPER</p>
+                        <p>BE0649642553</p>
+                        <p>Rue de la presse 4 1000 Brussel</p>
+                        <p>Copyright © 2019</p>
+                    </div>
+
+EOD;
+echo "$resultaat";
+
+/*if(isset($_POST['submit'])) {
  
     $email_to = "kunitskidzmitry@gmail.com";
     
@@ -21,7 +56,7 @@
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
  
- 
+
     $naam = $_POST['naam']; 
     $voornaam = $_POST['voornaam']; 
     $email = $_POST['email']; 
@@ -78,5 +113,5 @@ $headers = 'From: '.$email."\r\n".
 
 
 <?php
-}
+}*/
 ?>
