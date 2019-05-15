@@ -4,8 +4,14 @@
 <head>
 
     <meta charset="utf-8">
-    <title>Anwin</title>
+    <title> Anwin | Night Auditors en Front Office Managers | België </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anwin is een keten van professionele Night Auditors en Front Office Managers in België. Wij kunnen uw nachtreceptie volledig, gedeeltelijk, tijdelijk of voor een langere tijd versterken. ">
+    <meta name="google-site-verification" content="h8k_6q8_hc-_eDIKDwqNR5ImtjYAuyeJBw_0PacUVDQ" />
+    <meta name="keywords" content="Night Auditors, Front Office Managers, Belgie, nachtreceptie, ">
+    <meta name="robots" content="index" />
+    <meta name="googlebot" content="index" />
+    <meta name="google-site-verification" content="+h8k_6q8_hc-_eDIKDwqNR5ImtjYAuyeJBw_0PacUVDQ" />
     <link type="text/css" rel="stylesheet" href="framework7-4.3.1/packages/core/css/framework7.bundle.css">
     <link type="text/css" rel="stylesheet" href="framework7-4.3.1/kitchen-sink/core/css/app.css">
     <link type="text/css" rel="stylesheet" href="website_anwin/style.css">
@@ -24,17 +30,22 @@
                 <header>
 
 
-                    <div class="navbar"> <img id="logo" alt="logo" src="website_anwin/logo.png"></div>
+                    <nav> <img id="logo" alt="logo" src="website_anwin/logo.png">
+                    </nav>
                 </header>
-                <img id="fotoLobby" src="website_anwin/fotoLobby.jpeg">
+                <img id="fotoLobby" src="website_anwin/fotoLobby.jpeg" alt="Lobby">
                 <div class="demo-expandable-cards">
                     <div class="card card-expandable">
                         <div class="card-content">
-                            <div id="fotoHilton" style="background-image:url(/website_anwin/fotoHilton.jpg)"></div>
-                            <a href="#" class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 80px">
-                                <i class="icon f7-icons">close_round_fill</i>
-                            </a>
-                            <div class="foto"></div>
+                            <div id="fotoHilton" style="background-image: url(website_anwin/fotoHilton.jpg);">
+                                <div class="card-header text-color-white">
+
+                                    Over ons
+                                </div> <a href="#" class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 100px">
+                                    <i class="icon f7-icons">close_round_fill</i>
+                                </a>
+
+                            </div>
                             <div class="card-header display-block" style="height: 60px; color:#875829">Dag en nacht gastvrij
                             </div>
                             <div class="card-content-padding">
@@ -50,12 +61,18 @@
                     </div>
                     <div class="card card-expandable">
                         <div class="card-content">
-                            <div id="fotoBril" style="background-image:url(website_anwin/fotoBril.jpeg)"></div>
-                            <a href="#" class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
-                                <i class="icon f7-icons">close_round_fill</i>
-                            </a>
-                            <div class="card-header display-block" style="height: 60px;  color:#875829">Diensten
+                            <div id="fotoBril" style="background-image:url(website_anwin/fotoStation2.jpg)">
+                                <div class="card-header text-color-white">Diensten
+                                </div>
+
+                                <a href="#" class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 100px">
+                                    <i class="icon f7-icons">close_round_fill</i>
+                                </a>
                             </div>
+
+                            <div class="card-header display-block" style="height: 60px;  color:#875829">
+
+                                Diensten </div>
                             <div class="card-content-padding">
                                 <article id="diensten">
 
@@ -74,24 +91,30 @@
                     </div>
                     <div class="card card-expandable">
                         <div class="card-content">
-                            <div id="fotoTel" style="background-image:url(website_anwin/fotoTel.jpg)"></div>
-                            <a href="#" class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
-                                <i class="icon f7-icons">close_round_fill</i>
-                            </a>
-                            <div class="card-header display-block" style="height: 60px;  color:#875829">Contacten
+                            <div id="fotoTel" style="background-image: url(website_anwin/fotoTel.jpeg);">
+                                <div class="card-header text-color-white">Contacten
+                                </div>
+
+                                <a href="#" class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 100px">
+                                    <i class="icon f7-icons">close_round_fill</i>
+                                </a>
+                            </div>
+                            <div class="card-header display-block" style="height: 60px;  color:#875829">
+
                             </div>
                             <div class="card-content-padding">
                                 <section id="contact">
+                                    <h2>Contacten</h2>
                                     <img id="logoFooter" alt="logoFooter" src="website_anwin/logo.png">
                                     <!--<p>ANWIN</p>-->
-                                    <form class="list" id="my-form">
+                                    <form class="list" id="my-form" action="formToEmail.php" method="post">
                                         <ul>
                                             <li>
-                                                <div class="item-content item-input">
+                                                <div class=" item-content item-input">
                                                     <div class="item-inner">
                                                         <div class="item-title item-label">Naam</div>
                                                         <div class="item-input-wrap">
-                                                            <input type="text" name="name" placeholder="Naam">
+                                                            <input type="text" name="naam" placeholder="Naam">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -101,7 +124,7 @@
                                                     <div class="item-inner">
                                                         <div class="item-title item-label">Voornaam</div>
                                                         <div class="item-input-wrap">
-                                                            <input type="text" name="name" placeholder="Voornaam">
+                                                            <input type="text" name="voornaam" placeholder="Voornaam">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -120,22 +143,21 @@
                                                     <div class="item-inner">
                                                         <div class="item-title item-label">Bericht</div>
                                                         <div class="item-input-wrap">
-                                                            <textarea placeholder="Schrijf hier je bericht ..."></textarea>
+                                                            <textarea name="bericht" placeholder="Schrijf hier je bericht ..."></textarea>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </li>
                                         </ul>
+                                        <p>
+                                            <button style="background-color: #d39e69" name="submit" class="button button-fill button-round button-large open-click-to-close" type="submit" value="Verzenden">Verzenden</button>
+                                        </p>
+
                                     </form>
-                                    <p>
-                                        <a style="background-color: #d39e69" href="#" class="button button-fill button-round button-large">Verzenden</a>
-                                    </p>
+
                                 </section>
-
                             </div>
-
                         </div>
-
                     </div>
                 </div>
                 <footer>
@@ -159,4 +181,6 @@
     <script src="website_anwin/my-app.js"></script>
 
 
-</body></html>
+</body>
+
+</html>

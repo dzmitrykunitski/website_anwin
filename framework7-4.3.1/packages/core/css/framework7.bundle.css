@@ -10729,8 +10729,7 @@ html.with-panel-right-cover .panel-right {
 
 .card-expandable {
     overflow: hidden;
-    height: 350px;
-
+    height: 300px;
     background: var(--f7-card-expandable-bg-color);
     position: relative;
     transform-origin: center center;
@@ -10861,7 +10860,9 @@ html.with-panel-right-cover .panel-right {
 @media (min-width: 768px) and (min-height: 670px) {
     .card-expandable:not(.card-tablet-fullscreen) {
         /*max-width: var(--f7-card-expandable-tablet-width);*/
-        max-width: -webkit-fill-available;
+
+        max-width: 100%;
+
     }
 
     .card-expandable:not(.card-tablet-fullscreen).card-opened,
@@ -10871,20 +10872,23 @@ html.with-panel-right-cover .panel-right {
 
     .card-expandable:not(.card-tablet-fullscreen):not(.card-expandable-animate-width) .card-content {
 
-        /*width: -webkit-fill-available;*/
+
+        /* width: -webkit-fill-available;*/
         /*width: var(--f7-card-expandable-tablet-width);*/
+
         width: 100%;
+
     }
 
     .card-expandable:not(.card-tablet-fullscreen) .card-expandable-size {
 
         /*width: var(--f7-card-expandable-tablet-width);*/
-        width: 100%;
+        width: 120%;
 
-        /* width: -webkit-fill-available;*/
         /* height: 780px;*/
         /* height: var(--f7-card-expandable-tablet-height);*/
-        height: auto;
+        max-height: auto;
+
     }
 
 

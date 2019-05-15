@@ -21,7 +21,7 @@ nav {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 400px;
+    height: 300px;
     width: 100%;
 
     /*background-attachment: ;*/
@@ -30,7 +30,7 @@ nav {
 }
 
 #fotoLobby {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
