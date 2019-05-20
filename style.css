@@ -66,10 +66,17 @@ ul li {
 
 
 footer {
-    background-color: #bc8c6b;
-    color: white;
+    /*background-color: #bc8c6b;*/
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(nav.jpg);
+    width: 100%;
+    /*background-attachment: ;*/
+    height: auto;
 }
