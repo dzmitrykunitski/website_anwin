@@ -10,7 +10,7 @@ nav {
     background-image: url(nav.jpg);
     width: 100%;
     /*background-attachment: ;*/
-    height: auto;
+    height: 120px;
 
 
 }
@@ -51,9 +51,15 @@ ul li {
 }
 
 
-#logo {
+#logo,
+#logoFooter2 {
     margin-left: 2%;
     max-height: 4.2em;
+}
+
+#logo {
+    margin-left: 2%;
+    max-height: 6.6em;
 }
 
 
@@ -75,8 +81,17 @@ footer {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-image: url(nav.jpg);
+    background-image: url(navFooter.jpg);
     width: 100%;
     /*background-attachment: ;*/
-    height: auto;
+    height: 120px;
+
+}
+
+.fa-check-circle {
+    color: greenyellow;
+}
+
+.fa-exclamation-circle {
+    color: red;
 }
