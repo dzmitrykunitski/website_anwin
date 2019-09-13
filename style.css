@@ -84,10 +84,13 @@ footer {
     background-image: url(navFooter.jpg);
     width: 100%;
     /*background-attachment: ;*/
-    height: 120px;
+    
 
 }
+footer p {
 
+    padding: 3px;
+}
 .fa-check-circle {
     color: greenyellow;
 }
